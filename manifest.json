@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Salesforce Developer Console Opener",
+    "description": "Opens the Salesforce Developer Console in a new tab",
+    "version": "0",
+    "author": "Ian Neufer",
+    "background" : {
+        "scripts": ["activationListener.js","clickListener.js"],
+        "persistent": false
+    },
+    "page_action": {
+        "default_icon": "Salesforce_logo.png",
+        "default_title": "Salesforce Developer Console Opener"
+    },
+    "permissions" : [
+        "tabs",
+        "activeTab"
+    ]
+}
